@@ -1,7 +1,7 @@
 <template>
   <li>
     <h3>{{ name }}</h3>
-    <div class="team-members">{{ memberCount }} Members</div>
+    <div class="team-members">{{ memberCount }} members</div>
     <router-link :to="'/teams/' + id">View Members</router-link>
   </li>
 </template>

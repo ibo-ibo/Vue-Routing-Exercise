@@ -9,6 +9,7 @@ import App from './App.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+    { path: '/', redirect: '/teams' },
     {
       path: '/teams',
       component: TeamsList,
@@ -21,6 +22,7 @@ const router = createRouter({
       path: '/teams/:teamId',
       component: TeamMembers,
     },
+    { path: '/notFound(.*)' },
   ],
 });
 const app = createApp(App);
